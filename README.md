@@ -10,27 +10,27 @@ Escribe y presiona Enter después de cada línea:
 <pre><code>sudo apt install lsb-release apt-transport-https ca-certificates software-properties-common -y</code></pre>
 
 <h3>Paso 3: Instala Git</h3>
-Escribe y presiona Enter:
+
 <pre><code>sudo apt install git</code></pre>
 
 <h3>Paso 4: Instala Emacs</h3>
-Escribe y presiona Enter:
+
 Elige a tu eleccón (nano) viene por defecto en la mayoría de OS basados en KERNEL LINUX.
 <pre><code>sudo apt install emacs</code></pre>
 
 <h3>Paso 5: Instala PHP 8.2</h3>
-Escribe y presiona Enter:
+
 <pre><code>sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg</code></pre>
 <pre><code>sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'</code></pre>
 <pre><code>sudo apt update</code></pre>
 <pre><code>sudo apt install php8.2</code></pre>
 
 <h3>Paso 6: Instala el servidor de base de datos MariaDB</h3>
-Escribe y presiona Enter:
+
 <pre><code>sudo apt install mariadb-server</code></pre>
 
 <h3>Paso 7: Cambia la contraseña del usuario 'root' en MariaDB</h3>
-Escribe y presiona Enter:
+
 <pre><code>mysql</code></pre>
 
 Una vez en la interfaz de MySQL, ejecuta lo siguiente:
