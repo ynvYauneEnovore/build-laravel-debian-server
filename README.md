@@ -35,8 +35,9 @@ Elige a tu eleccón (nano) viene por defecto en la mayoría de OS basados en KER
 
 Una vez en la interfaz de MySQL, ejecuta lo siguiente:
 <pre><code>ALTER USER 'root'@'localhost' IDENTIFIED BY 'NUEVA_CONTRASEÑA';</code></pre>
+Reemplaza NUEVA_CONTRASEÑA con la contraseña que deseas asignar. 
+Luego, para salir de la interfaz de MySQL, escribe:
 <pre><code>exit</code></pre>
-Reemplaza NUEVA_CONTRASEÑA con la contraseña que deseas asignar. Luego, para salir de la interfaz de MySQL, escribe:
 
 <h3>Paso 8: Instala Composer</h3>
 Sitio web:
