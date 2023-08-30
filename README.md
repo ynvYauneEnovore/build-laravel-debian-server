@@ -1,0 +1,73 @@
+Paso 1: Preparación
+
+Abre una terminal en tu computadora.
+Paso 2: Actualiza tu sistema y prepara herramientas
+
+<pre><code>sudo apt update</code></pre>
+
+bash
+Copy code
+Escribe y presiona Enter después de cada línea:
+sudo apt update
+sudo apt install lsb-release apt-transport-https ca-certificates software-properties-common -y
+Paso 3: Instala Git
+
+bash
+Copy code
+Escribe y presiona Enter:
+sudo apt install git
+Paso 4: Instala Emacs
+
+bash
+Copy code
+Escribe y presiona Enter:
+sudo apt install emacs
+Paso 5: Instala PHP 8.2
+
+bash
+Copy code
+Escribe y presiona Enter:
+sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg 
+sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'
+sudo apt update
+sudo apt install php8.2
+Paso 6: Instala el servidor de base de datos MariaDB
+
+bash
+Copy code
+Escribe y presiona Enter:
+sudo apt install mariadb-server
+Paso 7: Cambia la contraseña del usuario 'root' en MariaDB
+
+bash
+Copy code
+Escribe y presiona Enter:
+sudo mysql -u root
+Una vez en la interfaz de MySQL, ejecuta lo siguiente:
+
+sql
+Copy code
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'NUEVA_CONTRASEÑA';
+Reemplaza NUEVA_CONTRASEÑA con la contraseña que deseas asignar. Luego, para salir de la interfaz de MySQL, escribe:
+
+sql
+Copy code
+EXIT;
+Paso 8: Instala Composer
+
+bash
+Copy code
+Escribe y presiona Enter:
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+Paso 9: Instala extensiones y dependencias de PHP
+
+bash
+Copy code
+Escribe y presiona Enter después de cada línea:
+sudo apt install php-gd php-curl php-xml php-zip php-mysql php-mbstring unzip
+Paso 10: Instala la extensión adicional de PHP gd (si no la instalaste en el paso anterior)
+
+bash
+Copy code
+Escribe y presiona Enter:
+sudo apt install php-gd
