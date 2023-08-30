@@ -1,4 +1,7 @@
-Paso 1: Preparación
+<h1>Upload for production project laravel-debian-server</h1>
+<h2> <span>Desarrollador: Yovan R. Yaune Enovore</span></h2>
+
+<h3>Paso 1: Preparación</h3>
 
 Abre una terminal en tu computadora.
 Paso 2: Actualiza tu sistema y prepara herramientas
