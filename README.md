@@ -3,13 +3,10 @@ Paso 1: Preparación
 Abre una terminal en tu computadora.
 Paso 2: Actualiza tu sistema y prepara herramientas
 
-<pre><code>sudo apt update</code></pre>
-
-bash
-Copy code
 Escribe y presiona Enter después de cada línea:
-sudo apt update
-sudo apt install lsb-release apt-transport-https ca-certificates software-properties-common -y
+<pre><code>sudo apt update</code></pre>
+<pre><code>sudo apt install lsb-release apt-transport-https ca-certificates software-properties-common -y</code></pre>
+
 Paso 3: Instala Git
 
 bash
