@@ -13,8 +13,9 @@ Escribe y presiona Enter después de cada línea:
 Escribe y presiona Enter:
 <pre><code>sudo apt install git</code></pre>
 
-<h3>Paso 4: Instala Emacs
+<h3>Paso 4: Instala Emacs</h3>
 Escribe y presiona Enter:
+Elige a tu eleccón (nano) viene por defecto en la mayoría de OS basados en KERNEL LINUX.
 <pre><code>sudo apt install emacs</code></pre>
 
 <h3>Paso 5: Instala PHP 8.2</h3>
